@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+   <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -90,7 +91,7 @@
         </p>
       </section>
 
-      <!-- SECCIÓN 1: TUS PROYECTOS Y APPS (TEZOEXPRESS & INDUSTRIAL) -->
+      <!-- SECCIÓN 1: TUS PROYECTOS Y APPS -->
       <section id="proyectos" class="space-y-6">
         <div class="flex justify-between items-end border-b border-slate-800 pb-3">
           <div>
@@ -133,7 +134,7 @@
         </div>
       </section>
 
-      <!-- SECCIÓN 2: VITRINA DE COMERCIO LOCAL (PANADERÍA, BARBERÍA, ZAPATERÍA...) -->
+      <!-- SECCIÓN 2: VITRINA DE COMERCIO LOCAL -->
       <section id="comunidad" class="space-y-6">
         <div class="flex justify-between items-end border-b border-slate-800 pb-3">
           <div>
@@ -145,7 +146,6 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
           
-          <!-- Negocio Local 1: Panadería -->
           <div class="card-3d glass-panel p-6 rounded-3xl space-y-3">
             <span class="text-3xl">🥖</span>
             <h3 class="text-lg font-bold text-white">Panadería Local</h3>
@@ -153,7 +153,6 @@
             <span class="text-[10px] text-emerald-400 font-bold block pt-2">✨ Próximamente con catálogo digital</span>
           </div>
 
-          <!-- Negocio Local 2: Barbería -->
           <div class="card-3d glass-panel p-6 rounded-3xl space-y-3">
             <span class="text-3xl">💈</span>
             <h3 class="text-lg font-bold text-white">Barbería & Estilo</h3>
@@ -161,7 +160,6 @@
             <span class="text-[10px] text-emerald-400 font-bold block pt-2">✨ Próximamente con citas online</span>
           </div>
 
-          <!-- Negocio Local 3: Zapatería -->
           <div class="card-3d glass-panel p-6 rounded-3xl space-y-3">
             <span class="text-3xl">👞</span>
             <h3 class="text-lg font-bold text-white">Zapatería Regional</h3>
@@ -223,7 +221,6 @@
 
     <!-- SCRIPT DE CONFIGURACIÓN Y AUTOMATIZACIÓN -->
     <script>
-        // Aplicar datos del panel CONFIG
         document.getElementById('header-title').innerText = CONFIG.nombrePlataforma;
         document.getElementById('footer-brand').innerText = CONFIG.nombrePlataforma;
         document.getElementById('txt-ubicacion').innerText = CONFIG.ubicacion;
@@ -231,7 +228,6 @@
         document.getElementById('val-app-precio').innerText = CONFIG.servicios.appPosDespliegue;
         document.getElementById('val-costal-precio').innerText = CONFIG.servicios.costalesMayoreo;
 
-        // Función interactiva para enviar mensajes a WhatsApp de forma limpia
         function enviarWhatsAppMarketing() {
             const asunto = document.getElementById('user-asunto').value;
             const detalle = document.getElementById('user-detalle').value.trim();
@@ -246,22 +242,4 @@
         }
     </script>
 </body>
-            </html>: Number(this.newProduct.price),
-                        stock: Number(this.newProduct.stock)
-                    });
-                    this.saveData();
-                    this.showModal = false;
-                },
-
-                deleteProduct(id) {
-                    if (confirm('¿Estás seguro de eliminar este producto?')) {
-                        this.products = this.products.filter(p => p.id !== id);
-                        this.saveData();
-                    }
-                },
-
-                exportInventoryCSV() {
-                    let csv = `Tienda: ${this.storeName}\nID,Producto,Precio,Stock\n`;
-                    this.products.forEach(p => {
-                        csv += `${p.id},"${p.name}",${p.price},${p.stock}\n`;
-                    .
+</html>     
